@@ -169,17 +169,6 @@
               </div>
               <div class="clearfix"></div>
             </div>
-            <!-- phoe number -->
-            <!-- <div class="col-md-4 w3ls_footer_grid_left">
-						<div class="w3ls_footer_grid_leftl">
-							<i class="fa fa-phone" aria-hidden="true"></i>
-						</div>
-						<div class="w3ls_footer_grid_leftr">
-							<h4>Call Me</h4>
-							<p>(+000) 003 003 0052</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div> -->
             <!-- email -->
             <div class="col-md-4 w3ls_footer_grid_left">
               <div class="w3ls_footer_grid_leftl">
@@ -230,5 +219,27 @@
     $(function () {
       $("#includeContact").load("html/contact.html");
     });
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyADfVUdzG0sjNPlof4HAQoeuJXFNZ_0sxw",
+      authDomain: "personal-website-4e0ea.firebaseapp.com",
+      projectId: "personal-website-4e0ea",
+      storageBucket: "personal-website-4e0ea.appspot.com",
+      messagingSenderId: "91246511527",
+      appId: "1:91246511527:web:cd90ddfd358455feeba282",
+      measurementId: "G-0GS755EYGG",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
   </script>
 </html>
